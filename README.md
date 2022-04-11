@@ -42,10 +42,9 @@
       </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#optimizations">Optimizations</a></li>
+    <li><a href="#lessons-learned">Lessons Learned</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -57,6 +56,9 @@
 The aim of this project was to create a secure and easy-to-use voting app that also showed election information catered to the user's location. Our team of highly skilled engineers envisioned a method that accomplished a high level of security while also offering many user focused experiences that create a sticky user experience while also being aesthetically pleasing and accessible. We have incorporated many features that allow customization based on user specific information that is securely stored and offer features that guide the user to having all the election information at their fingertips.   
  
 Our App gives users the ability to sign-up and sign-in securely, get polling info, register to vote with the US government and be able to view specific election information for elections in their area. Then if a user has been validated living in the United States, they will be able to vote directly in the app securely.
+
+### Proposal 
+* [SYV Proposal for Internet Voting System](https://docs.google.com/document/d/112Ge8-ga15DVwH6p0OYwUTxvhhrLaUTq6ydi3Qdq_wU/edit)
 
 
 ### Contributors
@@ -78,8 +80,7 @@ This section should list any major frameworks that you built your project using.
 * [Passport](http://www.passportjs.org/)
 
 
-### Proposal 
-* [Project Proposal] (https://docs.google.com/document/d/112Ge8-ga15DVwH6p0OYwUTxvhhrLaUTq6ydi3Qdq_wU/edit)
+
 
 
 
