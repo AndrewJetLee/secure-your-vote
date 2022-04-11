@@ -52,16 +52,17 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![image](https://user-images.githubusercontent.com/73206753/120080209-ac9e7980-c06c-11eb-95c0-140fec9f7617.png)
 
 The aim of this project was to create a secure and easy-to-use voting app that also showed election information catered to the user's location. Our team of highly skilled engineers envisioned a method that accomplished a high level of security while also offering many user focused experiences that create a sticky user experience while also being aesthetically pleasing and accessible. We have incorporated many features that allow customization based on user specific information that is securely stored and offer features that guide the user to having all the election information at their fingertips.   
  
 Our App gives users the ability to sign-up and sign-in securely, get polling info, register to vote with the US government and be able to view specific election information for elections in their area. Then if a user has been validated living in the United States, they will be able to vote directly in the app securely.
 
+
 ### Contributors
 * [Jason Bhatti](https://github.com/bhattibytes)
 * [Marco Canchola](https://github.com/marcoantonio224)
-* [Andrew Lee](https://github.com/TurkeyFats)
+* [Andrew Lee](https://github.com/andrewjetlee)
 * [De'Markus Matthews](https://github.com/DManthonyx)
 * [Cody Mumford](https://github.com/codymumford)
 * [Dom Stepek](https://github.com/domstepek)
@@ -75,6 +76,12 @@ This section should list any major frameworks that you built your project using.
 * [Tailwind CSS](https://tailwindcss.com)
 * [Mongodb](https://www.mongodb.com/)
 * [Passport](http://www.passportjs.org/)
+
+
+### Proposal 
+* [Project Proposal] (https://docs.google.com/document/d/112Ge8-ga15DVwH6p0OYwUTxvhhrLaUTq6ydi3Qdq_wU/edit)
+
+
 
 ## Getting Started
 
@@ -104,7 +111,6 @@ You will need the following API keys in a .env.local file for authentication:
 * Facebook civics API key (https://developers.facebook.com/docs/)
 * Google civics API key(https://developers.google.com/civic-information/docs/using_api)
 
-//Do we need a config.js file for the app
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -118,13 +124,21 @@ Our App gives users the ability to sign-up and sign-in securely, get polling inf
 ![image](https://user-images.githubusercontent.com/73206753/120080209-ac9e7980-c06c-11eb-95c0-140fec9f7617.png)
 * Starting at the home page, there are three links that--even if a user doesn't have an account can register to vote, check registration status, and get election information based on state.
 * Upon clicking Get Information By State, an interactive map will be displayed. When a user clicks on a state, the user will be redirected to a state specific page with that state's election information.
+
+
 ![image](https://user-images.githubusercontent.com/73206753/120081774-1ec68c80-c074-11eb-865f-397055c74434.png)
 * To sign-up, click the sign-up button on the top right of the homepage. Then, the user enters the requisite information: first name, last name, email, and password. Both email and password have validations that will check if they are properly formatted: the password be between 8 - 13 characters and that also contain at least one uppercase, one lowercase, and one special character.
 * We’ve also implemented single sign on for both Google and Facebook. We’ll circle back to this and have the backend team explain their process. 
+
+
 ![image](https://user-images.githubusercontent.com/73206753/120082373-79adb300-c077-11eb-8b4c-dd9c8161e219.png)
 * Next we come to the Address Validation where first you can search for an address then once it is found populate the rest of the fields and validate the address is in the United States with a special confetti animation on the inserting a valid address. 
+
+
 ![image](https://user-images.githubusercontent.com/73206753/120082435-f3de3780-c077-11eb-8c4a-1b8c21c76a42.png)
 * Now that the user is Authenticated and Validated they are now able to see a user specific dashboard with several tabs with information tailored to the user’s specific location. 
+
+
 <h4>Dashboard with tabbed side navigation bar you will notice has:</h4>
 <ol>
   <li><p>Voter Registration - passes user info to a government secured website embedded in our application by use of an iFrame
@@ -137,4 +151,52 @@ Our App gives users the ability to sign-up and sign-in securely, get polling inf
   <li><p>Pledge to Vote - if user is not old enough to vote, sends a reminder to vote once eligible</p></li>
   <li><p>Ability to Vote - user sees voter ballot specific to the users address</p></li>
 </ol>
+
+
+<!-- ROADMAP -->
+## Roadmap
+
+- [ ] Make Mobile Responsive
+- [ ] Implement cloud storage for images for profile custimization
+- [ ] Allow lists to be created for Manga and Characters
+- [ ] Horizontal Load balancing 
+
+
+
+See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+
+
+## Optimizations
+
+<!-- You don't have to include this section but interviewers *love* that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews! -->
+
+**Implemented:**
+* Lazy loading of components allowed for a lower perceived loading time and reduced the number of API requests per second to accomodate for the rate-limitation of the Jikan API. 
+* Divided code in certain pages to separate react components to prevent the entire page from reloading on state changes on that specific component. Many of these components were also reused in various pages on the application.   
+
+
+**Potential:**
+* This project serves only as a showcase. If the application was intended to go live and expect higher web loads, horizontal scaling through multiple deployments of the server should be implemented. 
+* NGINX can also be used as a load-balancer if performance needs to be further improved.
+* Database indexing and caching may also be used if data capacity grows too large.
+* Global state management (e.g. React Context or Redux) has the potential to significantly reduce redundant code 
+
+
+## Lessons Learned:
+
+<!-- No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those *whoa this is awesome* or *fuck yeah I did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing. -->
+
+* First time working with a rate-limiting API. Ultimately decided to employ lazy loading of components to reduce the number of immediate API requests. 
+* Gained a much better understanding of how session-cookie based user authentication worked and how to debug cookie related issues. 
+* Worked with more complex conditional logic, especially in relation to state dependent conditional CSS rendering of styled components. 
+
+
+<!-- CONTACT -->
+## Contact
+
+Andrew Lee - [linkedin](https://www.linkedin.com/in/andrewjetlee/) - andrewjetlee777@gmail.com
+
+Project Link: [https://github.com/AndrewJetLee/anime-archive-client/](https://github.com/AndrewJetLee/anime-archive-client/)
+
+
 
