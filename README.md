@@ -42,7 +42,6 @@
       </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#optimizations">Optimizations</a></li>
     <li><a href="#lessons-learned">Lessons Learned</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -157,26 +156,14 @@ Our App gives users the ability to sign-up and sign-in securely, get polling inf
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Make Mobile Responsive
-- [ ] Implement cloud storage for images for profile custimization
-- [ ] Allow lists to be created for Manga and Characters
-- [ ] Horizontal Load balancing 
+- [ ] Blockchain / Smart Contract for Authentication
+- [ ] Horizontal scaling through multiple deployments of the server to handle higher web loads
+- [ ] NGINX can also be used as a load-balancer if performance needs to be further improved
+- [ ] Database indexing and caching may also be used if data capacity grows too large
 
 
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
-
-## Optimizations
-
-<!-- You don't have to include this section but interviewers *love* that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews! -->
-
-
-**Future:**
-* Blockchain / Smart Contract for Authentication
-* Horizontal scaling through multiple deployments of the server to handle higher web loads
-* NGINX can also be used as a load-balancer if performance needs to be further improved
-* Database indexing and caching may also be used if data capacity grows too large
 
 
 ## Lessons Learned:
