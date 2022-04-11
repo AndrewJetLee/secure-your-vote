@@ -171,16 +171,12 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 
 <!-- You don't have to include this section but interviewers *love* that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews! -->
 
-**Implemented:**
-* Lazy loading of components allowed for a lower perceived loading time and reduced the number of API requests per second to accomodate for the rate-limitation of the Jikan API. 
-* Divided code in certain pages to separate react components to prevent the entire page from reloading on state changes on that specific component. Many of these components were also reused in various pages on the application.   
 
-
-**Potential:**
-* This project serves only as a showcase. If the application was intended to go live and expect higher web loads, horizontal scaling through multiple deployments of the server should be implemented. 
-* NGINX can also be used as a load-balancer if performance needs to be further improved.
-* Database indexing and caching may also be used if data capacity grows too large.
-* Global state management (e.g. React Context or Redux) has the potential to significantly reduce redundant code 
+**Future:**
+* Blockchain / Smart Contract for Authentication
+* Horizontal scaling through multiple deployments of the server to handle higher web loads
+* NGINX can also be used as a load-balancer if performance needs to be further improved
+* Database indexing and caching may also be used if data capacity grows too large
 
 
 ## Lessons Learned:
@@ -197,7 +193,7 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 
 Andrew Lee - [linkedin](https://www.linkedin.com/in/andrewjetlee/) - andrewjetlee777@gmail.com
 
-Project Link: [https://github.com/AndrewJetLee/anime-archive-client/](https://github.com/AndrewJetLee/anime-archive-client/)
+Project Link: [https://github.com/AndrewJetLee/syv](https://github.com/AndrewJetLee/syv/)
 
 
 
