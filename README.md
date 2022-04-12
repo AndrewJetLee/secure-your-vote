@@ -163,16 +163,15 @@ Our App gives users the ability to sign-up and sign-in securely, get polling inf
 
 
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/AndrewJetLee/syv/issues) for a list of proposed features (and known issues).
 
 
-## Lessons Learned:
+## Optimizations:
 
 <!-- No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those *whoa this is awesome* or *fuck yeah I did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing. -->
 
-* First time working with a rate-limiting API. Ultimately decided to employ lazy loading of components to reduce the number of immediate API requests. 
-* Gained a much better understanding of how session-cookie based user authentication worked and how to debug cookie related issues. 
-* Worked with more complex conditional logic, especially in relation to state dependent conditional CSS rendering of styled components. 
+* Tailwind CSS used instead of more heavy duty front-end framework
+* Next.js allows for serverside rendering and better SEO  
 
 
 <!-- CONTACT -->
