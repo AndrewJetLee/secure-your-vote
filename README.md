@@ -13,7 +13,6 @@
     <a href="https://github.com/blue-ocean-bubbles/syv"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="http://13.90.213.141/">View Demo</a>
     ·
     <a href="https://github.com/blue-ocean-bubbles/syv/issues">Report Bug</a>
     ·
